@@ -47,10 +47,13 @@ export class ListaDeTareas {
 }
 
 // Ejemplo de uso
+// const tarea1 = new Tarea("Hacer la tarea de matemáticas", new Date("2023-09-10"))
+// const tarea2 = new Tarea("Comprar víveres", new Date("2023-09-08"))
+
 // const listaTareas = new ListaDeTareas();
 
-// listaTareas.agregarTarea("Hacer la tarea de matemáticas", new Date("2023-09-10"));
-// listaTareas.agregarTarea("Comprar víveres", new Date("2023-09-08"));
+// listaTareas.agregarTarea(tarea1);
+// listaTareas.agregarTarea(tarea2);
 
 // listaTareas.listarTareas();
 

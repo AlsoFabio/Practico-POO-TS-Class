@@ -59,8 +59,8 @@ export class Rectangulo implements FormaGeometrica {
 
 // Clase para triángulos
 export class Triangulo implements FormaGeometrica {
-    // base: number;
-    // altura: number;
+    // private base: number;
+    // private altura: number;
 
     constructor(private base: number, private altura: number) {
         // this.base = base;

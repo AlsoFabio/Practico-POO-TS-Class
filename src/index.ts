@@ -1,6 +1,7 @@
 import { ListaDeTareas } from "./tareas";
 import { Circulo,Rectangulo,Triangulo } from "./calculadora"
-import { Libro } from "./Libros";
+import { Biblioteca,Libro } from "./Libros";
+import { Perro } from "./Mascota";
 
 function main () {
   console.log('hello world')
@@ -8,6 +9,11 @@ function main () {
 
 main()
 
-const librito = new Libro("harry potter","JKR",true)
+const perro = new Perro(`Pepita`)
 
-console.log(librito);
+perro.jugar();
+perro.jugar();
+perro.jugar();
+
+console.log(perro);
+console.log(perro.hablar());
