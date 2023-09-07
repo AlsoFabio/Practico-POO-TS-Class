@@ -1,44 +1,55 @@
 export interface Animal {
     happiness: number
     hunger: number;
-    type: string;
-    voice: string;
+    typeOfAnimal: string;
 
-    comer(): void;
-    jugar(): void;
-    hablar(): void;
+    eat(): string;
+    play(): string;
+    talk(): string;
+    inspect(): string;
 }
 
-export class Perro implements Animal {
+export class Mascota implements Animal {
     private name: string;
+    typeOfAnimal: string;
     happiness: number = 2;
     hunger: number = 8;
-    type: string = "perro";
-    voice: string = "sonidos de perro";
-    constructor(name: string) {
+    constructor(name: string,typeOfAnimal:string) {
+        this.typeOfAnimal = typeOfAnimal;
         this.name = name;
     }
-    hablar(): string {
+    talk(): string {
         return this.happiness > 1
-            ? `sonidos de ${this.type} feliz`
-            : `quejidos de ${this.type}`;
+            ? `sonidos de ${this.typeOfAnimal} feliz`
+            : `quejidos de ${this.typeOfAnimal}`;
     }
-    comer(): string {
+    eat(): string {
         this.hunger >= 5 ? this.happiness = 2 : this.happiness = 1;
 
         if (this.hunger > 10) {
-            this.hablar();
-            return `Amigo, se esta atragantando tu ${this.type}`
+            this.talk();
+            return `Amigo, se esta atragantando tu ${this.typeOfAnimal}`
         }
         this.hunger += 5;
-        this.hablar();
-        return `${this.hunger}`
+        this.talk();
+        return `Medidor de hambre aumento a ${this.hunger}`
     }
-    jugar(): string {
+    play(): string {
         this.hunger >= 5 ? this.happiness = 2 : this.happiness = 1;
-        this.hablar();
+        this.talk();
         return this.hunger > 3
-            ? `Hambre: ${this.hunger -= 3}`
+            ? `Medidor de Hambre bajo a ${this.hunger -= 2}`
             : `${this.name} esta cansado/a`;
     }
+    inspect(): string {
+        return `Nombre: ${this.name}\nAnimal: ${this.typeOfAnimal}\nFelicidad: ${this.happiness===2?"Feliz":"Triste"}\nMedidor de hambre: ${this.hunger}`;
+    }
 }
+
+
+// const pajarito = new Mascota("Pepita", "pajaro");
+
+// console.log(pajarito.inspect());
+// console.log(pajarito.eat());
+// console.log(pajarito.play());
+// console.log(pajarito.inspect());
