@@ -42,7 +42,7 @@ export class Mascota implements Animal {
             : `${this.name} esta cansado/a`;
     }
     inspect(): string {
-        return `Nombre: ${this.name}\nAnimal: ${this.typeOfAnimal}\nFelicidad: ${this.happiness===2?"Feliz":"Triste"}\nMedidor de hambre: ${this.hunger}`;
+        return `Nombre: ${this.name}\nAnimal: ${this.typeOfAnimal}\nEstado: ${this.happiness===2?"Feliz":"Triste"}\nMedidor de hambre: ${this.hunger}`;
     }
 }
 
