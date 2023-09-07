@@ -1,7 +1,8 @@
-import { ListaDeTareas } from "./tareas";
-import { Circulo,Rectangulo,Triangulo } from "./calculadora"
+import { ListaDeTareas } from "./Tareas";
+import { Circulo,Rectangulo,Triangulo } from "./Calculadora"
 import { Biblioteca,Libro } from "./Libros";
-import { Perro } from "./Mascota";
+import { Mascota } from "./Mascota";
+import { Contact, ContactBook } from "./Contacto";
 
 function main () {
   console.log('hello world')
@@ -9,11 +10,4 @@ function main () {
 
 main()
 
-const perro = new Perro(`Pepita`)
-
-perro.jugar();
-perro.jugar();
-perro.jugar();
-
-console.log(perro);
-console.log(perro.hablar());
+// Copiar acá abajo los ejemplos de uso
