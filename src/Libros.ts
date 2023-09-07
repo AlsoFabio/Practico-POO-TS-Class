@@ -59,7 +59,7 @@ export class Biblioteca {
     }
 }
 
-// Ejemplo de uso
+// ejemplo de uso // copiar en index.ts
 // const libro1 = new Libro("harry potter","JKR")
 // const libro2 = new Libro("harry potter 2","JKR")
 

@@ -46,10 +46,18 @@ export class Mascota implements Animal {
     }
 }
 
-
+// ejemplo de uso // copiar en index.ts
 // const pajarito = new Mascota("Pepita", "pajaro");
 
-// console.log(pajarito.inspect());
-// console.log(pajarito.eat());
-// console.log(pajarito.play());
-// console.log(pajarito.inspect());
+// console.log(pajarito.inspect()+"\n");
+// console.log(pajarito.eat()+"\n");
+// console.log(pajarito.play()+"\n");
+// console.log(pajarito.inspect()+"\n");
+
+
+// const gato = new Mascota("diana", "gato");
+
+// console.log(gato.inspect()+"\n");
+// console.log(gato.eat()+"\n");
+// console.log(gato.play()+"\n");
+// console.log(gato.inspect()+"\n");

@@ -46,7 +46,7 @@ export class ListaDeTareas {
   }
 }
 
-// Ejemplo de uso
+// ejemplo de uso // copiar en index.ts
 // const tarea1 = new Tarea("Hacer la tarea de matemáticas", new Date("2023-09-10"))
 // const tarea2 = new Tarea("Comprar víveres", new Date("2023-09-08"))
 

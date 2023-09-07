@@ -78,7 +78,7 @@ export class Triangulo implements FormaGeometrica {
     }
 }
 
-// Ejemplo de uso
+// ejemplo de uso // copiar en index.ts
 // const circulo = new Circulo(5);
 // const rectangulo = new Rectangulo(4, 6);
 // const triangulo = new Triangulo(3, 4);

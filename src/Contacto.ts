@@ -4,28 +4,22 @@ export class Contact {
 }
 
 export class ContactBook {
-    contacts: Contact[] = [];
-
-    constructor() { this.contacts = []; }
+    private contacts: Contact[] = [];
 
     addContact(newContact: Contact): void {
         this.contacts.push(newContact)
     }
-    findOneContact(nombre: string): Contact | undefined {
-        return this.contacts.find((contacto) => contacto.getName().toLocaleLowerCase() === nombre.toLocaleLowerCase());
+    findOneContact(nombre: string): Contact[] {
+        return this.contacts.filter((contacto) => contacto.getName().toLocaleLowerCase() === nombre.toLocaleLowerCase());
     }
-    getContactList():Array<string>{
-        const list:string[]=[];
-        this.contacts.forEach(e => {
-            list.push(e.getName());
-        });
-        return list;
+    getContactList():any{
+        return this.contacts.map((contacto) => contacto.getName())
     }
 }
 
-// ejemplo de uso
-// const contacto1 = new Contact("manolo","aasdf",123456789)
-// const contacto2 = new Contact("renata","aasdf",123456789)
+// ejemplo de uso // copiar en index.ts
+// const contacto1 = new Contact("manolo","correo1@yahoo",123456789)
+// const contacto2 = new Contact("renata","correo1@yahoo",987654321)
 
 // const agenda=new ContactBook()
 
