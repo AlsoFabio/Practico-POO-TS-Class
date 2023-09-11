@@ -79,9 +79,9 @@ export class Triangulo implements FormaGeometrica {
 }
 
 // ejemplo de uso // copiar en index.ts
-// const circulo = new Circulo(5);
-// const rectangulo = new Rectangulo(4, 6);
-// const triangulo = new Triangulo(3, 4);
+// const circulo = new Geometria(new Circulo(5));
+// const rectangulo = new Geometria(new Rectangulo(4, 6));
+// const triangulo = new Geometria (new Triangulo(3, 4));
 
 // console.log("Círculo:");
 // console.log("Área:", circulo.calcularArea());
